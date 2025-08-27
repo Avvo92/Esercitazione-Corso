@@ -1,0 +1,115 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+   font-family: "Montserrat", sans-serif; 
+}
+
+
+
+nav{
+    position: sticky;
+    width: 100vw;
+    height: 10vh;
+    padding: 1vmin 1vmin;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+}
+
+nav h1{
+    font-size: 5vmin;
+    line-height: 0;
+    text-transform: uppercase;
+}
+
+.first-list{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45%;
+    list-style: none;
+    font-size: 2.5vmin;
+}
+
+.second-list{
+    position: relative;
+    display: none;
+    border: 0px;
+    background-color: transparent;
+    font-size: 3.5vmin;
+}
+
+.second-list ul{
+   position: absolute;
+   list-style: none;
+   top:8vmin;
+   visibility: hidden;
+}
+
+.second-list ul li{
+    text-align: left;
+}
+
+.second-list:focus ul{
+    visibility: visible;
+}
+
+form{
+    width: 24vmin;
+    height: 5vmin;
+    line-height: 0;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;font-size: 5vmin;
+}
+
+input{
+    width: 15vmin;
+    height: 4.5vmin;
+    border: 0px;
+    font-size: 3.5vmin;
+
+}
+
+button{
+    font-size: 3.5vmin;
+    border: 0px;
+}
+
+.check{
+    position: absolute;
+    padding: 3vmin;
+    font-size: 6vmin;
+    bottom: 5vmin;
+    right: 5vmin;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: .5vmin .5vmin 2vmin grey ;
+}
+
+
+
+@media screen and (max-width:1161px) {
+    nav{
+        justify-content: space-between;
+    }
+
+    .first-list{
+        display: none;
+    }
+
+    .second-list{
+        display: flex;
+    }
+    
+}

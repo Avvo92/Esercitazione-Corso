@@ -1,0 +1,689 @@
+/* css reset */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    
+    background-color: #2f2f2f;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin: auto;    
+}
+
+/* immagine di sfondo */
+img.back-ground{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* nav bar principale */
+.first-nav{
+    z-index: 1;
+    background: linear-gradient(#2f2f2f,#2f2f2f00);
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 8vmin;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-nav > ul{
+    position: relative;
+    display: flex;
+    width: 45%;
+    height: 100%;
+    right: 1%;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-nav > ul > li{
+    display: flex;
+    width: 8%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    transition: 0.3s;    
+}
+
+.first-nav > ul > li:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.first-nav > ul > li:nth-child(n +6){
+    width: 13%;
+}
+
+.first-nav > ul > li > a{
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    font-size: 1.3vmin;
+    text-transform: uppercase;
+    color: white;
+}
+
+.first-nav img{
+    position: relative;
+    height: 70%;
+    left: 0.9%;
+}
+
+.first-nav button{
+    position: relative;
+    width: 15%;
+    height: 50%;
+    right: 4.5%;
+    font-size: 2.3vmin;
+    text-transform: capitalize;
+    background-color: yellow;
+    border: transparent;
+    border-radius: 2.5vh;
+    transition: 0.3s;
+}
+
+.first-nav button:hover{
+    transform: scale(1.2);
+    transition: 0,3s;
+}
+
+
+
+/* navbar mobile */
+.second-nav{
+    z-index: 1;
+    background: linear-gradient(#2f2f2f,#2f2f2f00);
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 10vmin;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.second-nav img{
+    position: relative;
+    height: 8vmin;
+    left: 2vmin;
+}
+
+.second-nav button{
+    position: absolute;
+    right: 6vw;
+    color: white;
+    background-color: transparent;
+    border: 0px;
+    font-size: 2vmin;
+}
+
+.second-nav button i{
+    position: relative;
+}
+
+.second-nav button ul {
+    position: absolute;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    flex-direction: column;
+    left: -25vmin;
+    background-color:rgba(17, 17, 18, 0.888);
+    list-style: none;
+    width: 40vmin;
+    border-radius: 1vmin;
+    transition: 0.3s;
+}
+
+.second-nav button ul li{
+    display: block;
+    padding: 1.5vmin;
+    text-align: start;
+    
+}
+
+.second-nav ul li a{
+    text-decoration: none;
+    font-size: 4vmin;
+    color: white;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+.second-nav button:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+.second-nav button li:hover{
+    transform: translatex(2vmin) scale(1.1);
+    transition: 0.2s;
+    transition-timing-function: linear;
+}
+
+.second-nav button li:hover a{
+    color: yellow;
+}
+
+
+
+
+/* contenitore principale */
+.ultra{
+    position: relative;
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 2%;
+}
+
+
+
+/* legenda */
+.legenda{
+    position: relative;
+    display: flex;
+    width: 70%;
+    top: 10vmin;
+    margin-bottom: 20px;
+    margin-left: 1vmin;
+    gap: 5%;
+}
+
+.legenda p:last-child{
+    color: yellow;
+}
+
+
+
+
+/* header */
+header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: 3;
+    top:12vmin;
+    width: 100%;
+    margin-bottom: 2vmin;
+    align-items: start;
+}
+
+header > div{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > div > img{
+    position: relative;
+    width: 60%;
+    padding: 1vmin;
+    background-color: rgba(49, 46, 46, 0.625);
+    border-radius: 15px;
+}
+
+header > h1{
+    position: relative;
+    width: 60%;
+    margin-bottom: 1vmin;
+    margin-left: 1vmin;
+    
+}
+
+header > time{    
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1vmin;
+    margin-left: 1vmin;
+    color: yellow;
+    font-size: 120%;
+    
+}
+
+header aside{
+    position: relative;      
+    width: 38%;
+    padding: 1vmin;
+    background-color: rgba(49, 46, 46, 0.625);
+    border-radius: 10px;
+    height: fit-content;
+    transition: 0.3s;
+}
+
+header aside:hover{
+    scale: 1.05;
+    transition: 0.3s;
+}
+
+header aside article img{
+    width: 100%;
+    margin-bottom: 0.5vmin;
+    border-radius: 6px;
+}
+
+header aside article time{
+    position: relative;
+    margin-bottom: 0.5vmin;
+    font-size: 70%;
+}
+
+header aside h3{
+    font-size: 100%;
+    margin-bottom: 5px;
+}
+
+header aside article p{
+    position: relative;
+    height: 25px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    font-size: 70%;
+}
+
+header aside article button{
+    background-color: transparent;
+    border: transparent;
+    color: yellow;
+}
+
+
+
+/* primo banner */
+
+.first-banner{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 12vmin;
+    margin-bottom: 2vmin;
+    padding: 10px;
+    background-color: yellow; 
+    color: black;
+    font-size: 80%;
+    font-weight: 300;
+    border: 0px transparent;  
+    border-radius: 10px;
+    line-height: 25px;
+}
+
+.first-banner button{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    width: 15%;
+    padding: 3px;
+    font-size: 20px;
+    border-radius:22px;
+}
+
+
+/* sezione principale */
+
+.main-section{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    top:12vmin;   
+    left: 0px;
+}
+
+.main-section aside{
+    position: relative;
+    width: 38%;
+    transition: 0.3s;
+}
+
+.main-section aside:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.main-section aside article {
+    position: relative;      
+    width: 100%;
+    height: fit-content;
+    padding: 1vmin;
+    margin-bottom: 1vmin;
+    background-color: rgba(49, 46, 46, 0.625);
+    border-radius: 10px;
+}
+
+.main-section aside article p{
+    position: relative;
+    height: 25px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    font-size: 70%;
+}
+
+.main-section aside article time{
+    position: relative;
+    margin-bottom: 0.5vmin;
+    font-size: 70%; 
+}
+
+.main-section aside article button{
+    background-color: transparent;
+    border: transparent;
+    color: yellow;
+}
+
+.main-section aside article img{
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.main-section section{
+    position: relative;
+    width: 60%;
+    height: fit-content;    
+    background-color: rgba(49, 46, 46, 0.625);
+    margin-bottom: 1vmin;
+    padding: 1vmin;
+    border-radius: 10px;    
+}
+
+.main-section section h2{
+    position: relative;
+    margin: 20px 0px;
+}
+
+.main-section p{
+    position: relative;
+    margin-bottom: 1vmin;
+    font-weight: 300;
+}
+
+.main-section p a{
+    color: yellow;
+    text-decoration: none;
+}
+
+.main-section li{
+    margin-left: 2vmin;
+    box-sizing: content-box;
+}
+
+
+/* secondo banner (interno alla sezione principale) */
+.second-banner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: fit-content;
+    background-color: yellow;
+    color: black;
+    left: 0px;
+    margin-bottom: 1vmin;
+    padding: 1%;    
+    font-size: 80%;
+    font-weight: 300;
+    border: transparent;  
+    border-radius: 1vmin;
+}
+
+.second-banner h3{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.second-banner > img{
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+    right: 0px;
+}
+
+.second-banner > img:nth-child(5){
+    z-index: 1;
+    height: 90%;
+    margin: 0px 15px;
+}
+
+.second-banner > p{
+    position: relative;
+    width: 70%;
+    line-height: 20px;
+}
+
+.second-banner p strong{
+    font-weight: 700; 
+}
+
+.second-banner > p:nth-child(2){
+    margin-bottom: 1vh;
+}
+
+.second-banner button{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color: black;
+    color: white;
+    width: 20%;
+    padding: 5px;
+    margin-bottom: 1vmin;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius:22px;
+    border:  transparent;
+    
+}
+
+.second-banner button img{
+    position: relative;
+    width: 20%;
+}
+
+.second-banner button  p{
+    margin-bottom: 0%;
+    align-content: center;
+}
+
+
+/* footer alternativo all'aside (solo per mobile) */
+footer{
+    display: none;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    top:14vmin;
+    font-size: inherit;
+}
+
+footer h2{
+    position: relative;
+    left: 1vmin;
+    color: yellow;
+}
+
+footer > article {
+    position: relative;      
+    width: 100%;
+    padding: 1vmin;
+    margin-bottom: 1vmin;
+    background-color: rgba(49, 46, 46, 0.625);
+    border-radius: 10px;
+}
+
+footer > article > h3{
+    font-size: 4vmin;
+}
+
+footer > article  time{
+    position: relative;
+    display: inline;
+    width: 100%;
+    color: yellow;
+    font-size: 2.5vmin;
+}
+
+footer > article p{
+    position: relative;
+    margin-bottom: 5px;
+    font-size: 100%;
+}
+
+footer > article button{
+    position: relative;
+    background-color: transparent;
+    border: transparent;
+    color: yellow;
+    font-size: 2.5vmin;
+    text-transform: capitalize;
+}
+
+footer > article img{
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 1vmin;
+}
+
+
+
+
+/* caret */
+.caret{
+    z-index: 100;
+    position: fixed;;
+    bottom: 30px;
+    right: 30px;
+    color:black;
+    font-size: 20px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/* mobile phone query */
+@media screen and (max-width: 1000px) {
+    
+    .first-nav{
+        display: none;
+    }
+    
+    .second-nav{
+        display: flex;
+    }
+    
+    .ultra{
+        width: 97vw;
+        min-width: none;
+    }
+    
+    .legenda{
+        width: 100%;
+        font-size: 3vmin;
+    }
+    
+    header{
+        width: 100%;
+    }
+    
+    header > div > img{
+        width: 100%;
+    }
+    
+    header h1{
+        width: 100%;
+    }
+    
+    header time{
+        width: 100%;
+        text-align: right;
+        margin-right: 1vmin;
+    }
+    
+    .main-section{
+        width: 100%;
+    }
+    
+    .main-section section{
+        width:100%
+    }
+    
+    .main-section section p{
+        margin-bottom: 2vmin;
+        font-size: 3vmin;
+    }
+    
+    .main-section ul{
+        font-size: 3vmin;
+    }
+    
+    .first-banner{
+        font-size: 3vmin;
+        line-height: 4.5vmin;
+    }
+    
+    .first-banner button{
+        width: 20vmin;
+        font-size: 2.5vmin ;
+    }
+    
+    .second-banner{
+        width: 100%;
+    }
+    
+    .second-banner h3{
+        width:50%;
+        font-size: 3vmin; 
+    }
+    
+    .second-banner p{
+        width: 50%;
+        font-size: 3vmin;
+        line-height: 4.5vmin;
+    }
+    
+    .second-banner img:nth-child(5){
+        margin: 0px;
+        right: -30px;
+        height: 100%;
+    }
+    
+    .second-banner button p{
+        font-size: 2.5vmin;
+        margin: 0px;
+    }
+    
+    aside{
+        display: none;
+    }
+    
+    footer {
+        display: flex;
+    }   
+    
+    .caret{
+        font-size: 10px;
+    }
+    
+}
